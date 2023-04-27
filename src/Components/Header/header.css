@@ -1,14 +1,14 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 40px 25px 40px;
-    position: absolute;
-    width: 100%;
+.logo{
+    width: 80px;
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-    header img{
-        width: 70px;
-        height: 5.1vh;
-    }
+.ancord:hover{
+    color: rgb(214, 52, 52);
+    scale: 1.1;
+    transition: .3s;
+}
+.ancord{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
 }

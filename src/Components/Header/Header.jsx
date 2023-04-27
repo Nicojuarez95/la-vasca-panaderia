@@ -2,23 +2,24 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link as Anchor } from "react-router-dom";
+import logo from "../../Images/LaVascaLogo.png"
+import "./header.css"
 
-function BasicExample() {
+export default function BasicExample() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/home">La Vasca</Navbar.Brand>
+        <Anchor to="/home"><img src={logo} alt="" className="logo"/></Anchor>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/home">Inicio</Nav.Link>
-            <Nav.Link href="/Nosotros">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="/Products">Productos</Nav.Link>
+            <Anchor to="/home" className="ancord">Inicio</Anchor>
+            <Anchor to="/Nosotros" className="ancord">Quienes somos</Anchor>
+            <Anchor to="/Products" className="ancord">Contáctanos</Anchor>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-
-export default BasicExample;
