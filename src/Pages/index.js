@@ -3,9 +3,8 @@ import NotFound from "./NotFound/NotFound"
 import IndexLayout from "../Layouts/IndexLayouts/IndexLayouts"
 import MainLayout from '../Layouts/MainLayouts/MainLayouts'
 import { createBrowserRouter } from "react-router-dom";
-import Foother from "../Components/Foother/Foother";
 import Home from "./Home/Home";
-import Products from "../Components/Products/Products";
+import Contact from "../Components/Contact/Contact"
 import Nosotros from "../Components/Nosotros/Nosotros"
 
 export const router = createBrowserRouter([
@@ -36,8 +35,8 @@ export const router = createBrowserRouter([
                 element: <Nosotros/>
             },
             {
-                path: "/products",
-                element: <Products/>
+                path: "/contact",
+                element: <Contact/>
             },
         ]
     },
