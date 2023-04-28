@@ -1,7 +1,10 @@
 import React from 'react'
+import "./nosotros.css"
 
 export default function Nosotros() {
   return (
-    <div>Nosotros</div>
+    <div className='nosotros'>
+      Quienes somos
+    </div>
   )
 }

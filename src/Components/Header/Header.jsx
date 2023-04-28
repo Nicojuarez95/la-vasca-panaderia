@@ -8,7 +8,7 @@ import "./header.css"
 
 export default function BasicExample() {
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="dark" expand="lg" className="header">
       <Container>
         <Anchor to="/home"><img src={logo} alt="" className="logo"/></Anchor>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,7 @@ export default function BasicExample() {
           <Nav className="ms-auto">
             <Anchor to="/home" className="ancord">Inicio</Anchor>
             <Anchor to="/Nosotros" className="ancord">Quienes somos</Anchor>
-            <Anchor to="/Products" className="ancord">Contáctanos</Anchor>
+            <Anchor to="/contact" className="ancord">Contáctanos</Anchor>
           </Nav>
         </Navbar.Collapse>
       </Container>
